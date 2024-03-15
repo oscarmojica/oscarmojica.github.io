@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@font-face {
+
+    font-family: LOGOTYPE;
+    
+    src:url(/font/LOGOTYPE-ExtraBold.otf)
+    
+    }
+* {
+   
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.banner span {
+    color: #f28a02;
+}
+
+.banner {
+    font-family: 'LOGOTYPE'; 
+    background: #000;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.conte{
+    background-color: #000;
+}
+.conte .logotipofijo{
+    width: 50px;
+    display: flex;
+    justify-content: left;
+    margin-left: 100px;
+    padding-top: 15px;
+    position: fixed;
+    
+}
+
+.uno {
+    background: #eb7373;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.dos {
+    background-image:url(/img/fondo1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #ffffff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.dos p {
+    text-align: center;
+    width: 500px;
+}
+
+.tres {
+    background: #f28a02;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.tres img {
+    width: 70%;
+    height: 70%;
+    margin-top: 100px;
+}
+
+.cuatro {
+    background: #f28a02;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+.cuatro img {
+    width: 80%;
+    height: 80%;
+    margin-top: 100px;
+}
+
+.cinco {
+    background: #fff;
+    color: #000;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+.cinco img {
+    width: 80%;
+    height: 80%;
+    margin-top: 100px;
+}
+
+.seis {
+    background: #fff;
+    color: #000;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+.seis img {
+    width: 80%;
+    height: 80%;
+    margin-top: 100px;
+}
+
+.siete {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+.siete img {
+    width: 80%;
+    height: 80%;
+    margin-top: 100px;
+}
+
+/* ============================================= */
+/* ============= MENU ENCABEZADO ================ */
+.uno {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 65px;
+    background: #000;
+}
+
+.uno>li {
+    float: left;
+}
+
+.uno li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.uno li:hover>ul {
+    display: block;
+}
+
+/* ===========================================  */
+/* =========== ENLACES DEL MENU =============== */
+.uno a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    transition: .5s ease-in-out;
+}
+
+.uno a:hover {
+    background: transparent;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#home1 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    width: 40%;
+    height: 60px;
+    padding: 7px;
+}
+
+li {
+    padding: 15px;
+}
+
+/* ============================================ */
+/* ============= ENLACES ANIMACION ============ */
+.enlace {
+    overflow: hidden;
+    font: 3rem;
+    display: inline-block;
+    position: relative;
+}
+
+.enlace:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    bottom: 5px;
+    left: 10px;
+    background-color: #f8a60e;
+    border-radius: 0px 30px 0px 30px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+
+.enlace:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.enlace:target .submenu {
+    max-height: 600px;
+}
+
+/* =========================================== */
+/* ============= SUBMENU ARREGLOS ============ */
+.submenu {
+    max-height: 0;
+    transition: 4s;
+    padding: 10px 5px 8px 0px;
+    transition: transform 0.6s ease-out;
+    ;
+}
+
+.submenu:hover {
+    /* background: #4d4742; */
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    width: 100%;
+}
+
+.submenu .sub {
+    padding-top: 10px;
+    margin-bottom: -17px;
+    align-items: center;
+    color: #4d4742;
+    /* background: #4d4742; */
+}
+
+.submenu .sub:hover {
+    width: 100%;
+    box-shadow: 2px 3px 1px 0px #c3580b;
+    border-radius: 30px 0px 10px 0px;
+    /* background: #d9bca1; */
+    color: #4d4742;
+}
+
+/* Navegador del Scroll */
+
+.navegador {
+    display: flex;
+    position: fixed;
+    top: 200px;
+    right: 30px;
+    width: 16px;
+    z-index: index 10;
+    color: #636363;
+    flex-direction: column;
+    -webkit-transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+    -ms-transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+@media (max-width: 767px) {
+    .navigation {
+        top: 150px
+    }
+}
+
+.navigation a {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid #8b8e8a14;
+    display: block;
+    margin-bottom: 10px;
+    width: 16px;
+    height: 16px;
+    overflow: hidden
+}
+
+.navigation a span {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    background: #555555;
+    display: block;
+    width: 14px;
+    height: 14px;
+}
+
+.navigation a.active,
+.navigation a:hover {
+    border: 2px solid #F19104
+}
